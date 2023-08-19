@@ -38,21 +38,13 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">About</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Efforts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Partners</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -75,57 +67,71 @@
     </div>
 
     <div class="cards reveal">
-    <div class="card" style="width:25rem">
-        <img src="solar-photovoltaic-2666106_1280.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Renewable Energy</h5>
-          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id porro cumque ab libero nobis numquam laborum molestiae consequatur iure quisquam ipsum odit, dolor corrupti totam aut maxime voluptatibus placeat distinctio.</p>
-          <a href="https://www.tatapowersolar.com/rooftops/residential/" class="btn btn-success" style="width: 100%;" target="_blank">Explore</a>
+        <div class="card" style="width:25rem">
+            <img src="solar-photovoltaic-2666106_1280.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Renewable Energy</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id porro cumque ab libero
+                    nobis numquam laborum molestiae consequatur iure quisquam ipsum odit, dolor corrupti totam aut
+                    maxime voluptatibus placeat distinctio.</p>
+                <a href="https://www.tatapowersolar.com/rooftops/residential/" class="btn btn-success"
+                    style="width: 100%;" target="_blank">Explore</a>
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="cards reveal">
         <div class="card" style="width:25rem">
             <img src="mercedes-1504043_1280.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Electric Vehicles</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tempore repellendus in laboriosam dicta! Corrupti atque cumque libero, adipisci delectus quibusdam error obcaecati nam fugit ipsam doloremque minima tempore sint!</p>
-              <a href="https://www.tesla.com/" class="btn btn-success" style="width: 100%;" target="_blank">Explore</a>
+                <h5 class="card-title">Electric Vehicles</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tempore repellendus in
+                    laboriosam dicta! Corrupti atque cumque libero, adipisci delectus quibusdam error obcaecati nam
+                    fugit ipsam doloremque minima tempore sint!</p>
+                <a href="https://www.tesla.com/" class="btn btn-success" style="width: 100%;"
+                    target="_blank">Explore</a>
             </div>
-          </div>
         </div>
+    </div>
 
-        <div class="cards reveal">
-            <div class="card" style="width:25rem">
-                <img src="water-2057924_1280.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Water Conservation</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat tempore odit perferendis veritatis sit aliquam optio explicabo eos, incidunt necessitatibus quod, odio eius voluptatibus ex. Perspiciatis fuga cupiditate doloribus!</p>
-                  <a href="https://vikaspedia.in/energy/environment/green-good-deeds/save-water" class="btn btn-success" style="width: 100%;" target="_blank">Explore</a>
-                </div>
-              </div>
+    <div class="cards reveal">
+        <div class="card" style="width:25rem">
+            <img src="water-2057924_1280.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Water Conservation</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat fugiat tempore
+                    odit perferendis veritatis sit aliquam optio explicabo eos, incidunt necessitatibus quod, odio eius
+                    voluptatibus ex. Perspiciatis fuga cupiditate doloribus!</p>
+                <a href="https://vikaspedia.in/energy/environment/green-good-deeds/save-water" class="btn btn-success"
+                    style="width: 100%;" target="_blank">Explore</a>
             </div>
+        </div>
+    </div>
+        <div class="clearfix"></div>
 
+        <div class="partners">
+            <h3>Our Partners</h3>
+            <p>It's never a alone effort</p>
+        </div>
+    
+        <script>
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
 
-<script>
-    function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
 
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
-
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                } else {
-                    reveals[i].classList.remove("active");
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    } else {
+                        reveals[i].classList.remove("active");
+                    }
                 }
             }
-        }
-        window.addEventListener("scroll", reveal);
-</script>
+            window.addEventListener("scroll", reveal);
+        </script>
 
 </body>
 
