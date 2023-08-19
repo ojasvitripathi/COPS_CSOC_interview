@@ -4,3 +4,28 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+.banner {
+    background: url(mountains-1587287_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+    padding: 50px;
+}
+
+.banner h1 {
+    float: right;
+    color: #fff;
+    font-size: 70px;
+    position: relative;
+    top: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner p{
+    color: #fff;
+    position: relative;
+    top: 250px;
+    left: 900px;
+}
