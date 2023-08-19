@@ -77,7 +77,6 @@
 }
 
 .partners {
-    text-align: center;
     padding: 50px;
 }
 
@@ -86,5 +85,5 @@
 }
 
 .partners p{
-    font-size: 35px;
+    font-size: 25px;
 }
