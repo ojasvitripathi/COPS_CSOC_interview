@@ -5,12 +5,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 .banner {
     background: url(mountains-1587287_1280.jpg);
     background-position: center;
     background-size: cover;
     height: 95vh;
     padding: 50px;
+    overflow-x:hidden;
 }
 
 .banner h1 {
@@ -26,6 +28,43 @@
 .banner p{
     color: #fff;
     position: relative;
-    top: 250px;
-    left: 900px;
+    top: 380px;
+    left: 745px;
+    font-size: 20px;
 }
+
+.services h3{
+    padding: 50px 30px 0px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.services p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.column {
+    float: left;
+    width: 33%;
+    padding: 20px;
+}
+
+.row {
+    margin: 44px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
