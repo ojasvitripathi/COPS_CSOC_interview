@@ -44,27 +44,10 @@
     font-size: 30px;
 }
 
-.column {
+.cards {
+    padding: 15px 0px 15px 15px;
     float: left;
     width: 33%;
-    padding: 20px;
 }
 
-.row {
-    margin: 44px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-}
 
